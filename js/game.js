@@ -7,7 +7,7 @@ class Game{
 		this.enemy = new Enemy(select);
 		this.enemyList = [];
 		this.enemyList.push(this.enemy);
-		this.generateEnemy(select);
+		//this.generateEnemy(select);
 		
 	}
 	//随机生成敌人
