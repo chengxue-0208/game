@@ -1,0 +1,69 @@
+div#stage {
+	position: relative;
+	width: 800px;
+	height: 560px;
+	background-color: black;
+	background-image: url('../img/bg (1).jpg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	margin: auto;
+	
+	
+}
+
+
+.player{
+	position: relative;
+	transform: rotateY(180deg);
+	width: 90px;
+	height: 120px;
+	top: 400px;
+	left: 300px;
+/* 	border: 4px  solid red; */
+}
+
+.player .playerbody{
+	background-image: url(../img/playerbody.png);
+	width: 70px;
+	height: 70px;
+	top: 8px;
+	left: 16px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	/* border: 4px blue solid; */
+	z-index: 901 ;
+}
+
+.player .playerfoot{
+	background-image: url(../img/playfoot.png);
+	width: 65px;
+	height: 40px;
+	background-repeat: no-repeat;
+	background-position: center;
+	/* background-size: 100% 100%; */
+	position: absolute;
+	top: 50px;
+	left: 25px;
+	/* border: 4px green solid; */
+	z-index: 900;
+}
+.bullet{
+	position: absolute;
+	background-image: url(../img/bullet.png);
+	width: 31px;
+	height: 11px;
+	background-repeat: no-repeat;
+	background-position: center;
+	
+}
+
+.enemy{
+	position: absolute;
+	width: 90px;
+	height: 77px;
+	background-image: url('../img/enemy (1).png');
+	background-repeat: no-repeat;
+	background-position: center;
+	/* border: 2px solid red; */
+}
