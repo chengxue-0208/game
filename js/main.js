@@ -7,11 +7,20 @@ function getStyle(obj, name){
 window.onload = function(){
 	
 	var game = new Game('stage');
-	// game.enemy.createEnemy(50,400, 'right');
-	// game.enemy.run();
-	// game.generateEnemy('stage');
-	// game.enemy.getPosition();
-	// game.isCrash(game.enemy,game.player);
+	
+	const start = document.getElementById('start');
+	const pause = document.getElementById('pause');
+	const restart = document.getElementById('restart');
+	
+		start.onclick = function(){
+			game.start('stage');
+		}
+		pause.onclick = function(){
+			game.pause();
+		}
+		pause.onclick = function(){
+			game.restart();
+		}
 	
 	//定义一个键盘
 	document.onkeydown = function(e){

@@ -8,12 +8,13 @@ class Game{
 		this.enemyList = [];
 		this.enemyList.push(this.enemy);
 		//this.generateEnemy(select);
+		this.timerGenerateEnemy = 0;
 		
 	}
 	//随机生成敌人
 	generateEnemy(select){
 		//随机数生成
-
+		//clearInterval(this.timerGenerateEnemy);
 		this.timerGenerateEnemy = setInterval(() => {
 			let n1 = Math.floor(Math.random()*160);
 			let n2 = Math.floor(Math.random()*2);
@@ -28,6 +29,17 @@ class Game{
 			}
 		},3000);
 		
+	}
+	start(select){
+		this.generateEnemy(select);
+	}
+	
+	stop(){
+		clearInterval(this.timerGenerateEnemy);
+	}
+	
+	restart(){
+		window.location.reload();
 	}
 	
 	//判断子弹是否撞到敌人或玩家
